@@ -1,10 +1,10 @@
 module Ex3 where    
-    mdc :: (Num a, Num  a, Eq a, Ord a) => a -> a -> a
-    mdc x y
+    euclides :: Int -> Int -> Int
+    euclides x y
         | x == y = x
-        | x < y = mdc (y-x) x 
-        | otherwise = mdc (x-y) y
+        | x < y = euclides (y-x) x 
+        | otherwise = euclides (x-y) y
 
     main :: IO ()
     main = do
-        print $ mdc 6 27
+        print $ euclides 6 27
