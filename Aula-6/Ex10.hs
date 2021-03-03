@@ -16,7 +16,6 @@ intersection'' xs ys = filter (`elem` ys) xs
 
 intersection''' :: Eq a => [a] -> [a] -> [a]
 intersection''' xs ys = [x | x <- xs, y <- ys, x == y]
--- testando
 
 main :: IO ()
 main = do
