@@ -9,7 +9,7 @@ pergNum Sim = 1
 pergNum Nao = 0
 
 {-
-listPergs : recebe via parâmetro uma lista de
+(map) listPergs : recebe via parâmetro uma lista de
 Perguntas , e retorna 0 s e 1 s correspondentes aos
 constructores contidos na lista.
 -}
@@ -17,6 +17,9 @@ listPergs' :: [Pergunta] -> [Int]
 listPergs' = map pergNum
 
 {-
+(compreensão de lista) listPergs : recebe via parâmetro uma lista de
+Perguntas , e retorna 0 s e 1 s correspondentes aos
+constructores contidos na lista.
 -}
 listPergs :: [Pergunta] -> [Int]
 listPergs xs = [pergNum x | x <- xs]
